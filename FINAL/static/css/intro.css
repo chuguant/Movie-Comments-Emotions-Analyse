@@ -1,0 +1,237 @@
+
+
+.header{
+	background-color: #2b333b;
+}
+.header__wrap{
+	width:1200px;
+	height: 80px;
+	margin: 0 auto;
+	position: relative;
+}
+.header__logo{
+	width: 150px;
+	height: 38px;
+	line-height: 38px;
+	color: white;
+	text-indent: 50px;
+	background: url('../img/logo.jpg') left center no-repeat;
+	background-size: 138px 68px;
+	position: absolute;
+	top: 50%;
+	margin-top: -19px;
+	left: 20px;
+}
+
+.header__nav{
+	position: absolute;
+	right: 20px;
+	height: 38px;
+	top: 50%;
+	margin-top: -19px;
+}
+.header__nav-item{
+	color: white;
+	font-size: 14px;
+	display: block;
+	height: 38px;
+	line-height: 38px;
+	float: left;
+	position: relative;
+
+	width: 30px;
+	text-align: center;
+/*	margin: 0;*/
+	padding-left: 40px;
+}
+.header__nav-item:hover{
+	color: red;
+}
+.header__nav-item_status_active{
+	color: #f01400;
+}
+.header__nav-item_status_active::after{
+/*	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	background-color:#f01400; 
+	left: 0;
+	bottom: 0;*/
+}
+.header__nav-item_custom_button{
+	background: #f01414;
+	color: white;
+	text-align: center;
+	width: 90px;
+	border-radius: 3px;
+
+	/**/
+	margin-left:40px;
+	padding: 0;
+}
+.header__nav-item_custom_button:hover{
+	color: black;
+}
+
+
+
+/*screen1*/
+.screen-1{
+	background:;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	background:url(../img/bg1.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.screen-1__wrap{
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+}
+.screen-1__heading{
+	font-size:46px;
+	line-height: 46px;
+	color: white;
+	text-align: center;
+	padding-top: 50px;
+}
+.screen-1__subheading{
+	font-size:14px;
+	color: white;
+	text-align: center;
+	padding-top: 14px;
+	line-height: 13px;
+}
+.screen-1__type{
+	width: 1260px;
+	height: 270px;
+	position: absolute;
+	top: 160px;
+	margin-left: 30px;
+}
+.screen-1__type__item{
+	width: 220px;
+	margin-right: 90px;
+	height: 270px;
+	float: left;
+	position: relative;
+	text-align: center;
+	background-size: cover;
+}
+.screen-1__type__item__color{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	font: 14px;
+	color: white;
+	position: absolute;	
+	bottom: -44px;
+}
+
+.screen-1__type__item_i_1{
+	background: url('../img/movie-1.jpg') no-repeat left top;
+}
+.screen-1__type__item_i_2{
+	background: url('../img/movie-2.jpg') no-repeat left top;
+}
+.screen-1__type__item_i_3{
+	background: url('../img/movie-3.jpg') no-repeat left top;
+}
+.screen-1__type__item_i_4{
+	background: url('../img/movie-4.jpg') no-repeat left top;
+}
+
+
+.screen-1__type__item__storage{
+	width: 100%;
+	height: 12px;
+	line-height: 12px;
+	font: 12px;
+	color: #a4a9ae;
+	position: absolute;	
+	bottom: -66px;
+}
+/*screen2*/
+.screen-2{
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+	background-color: #2b333b;
+}
+.screen-2__bg{
+	width: 1920px;
+	height: 433px;
+	background:url(../img/bg-screen-5.png)  no-repeat center;	
+	background-size: contain;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px;
+	bottom: -100px;
+}
+.screen-2__heading{
+	font-size:46px;
+	line-height: 46px;
+	color: white;
+	text-align: center;
+	padding-top: 130px;
+}
+.screen-2__subheading{
+	font-size:26px;
+	color: white;
+	text-align: center;
+	padding-top: 25px;
+	line-height: 28px;
+}
+/*login*/
+.screen-login{
+	height: 60px;
+	padding: 120px 0;
+
+	position: relative;
+	overflow: hidden;
+	background: grey center no-repeat;
+	text-align: center;
+}
+.screen-login__button{
+	height: 80px;
+	width: 240px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 24px;
+	color: #fff;
+	background-color: #f01414;
+	display: inline-block;
+	border-radius: 3px;
+	transition: all .5s;
+}
+.screen-buy__button:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	color:black;
+}
+
+
+
+
+
+.header__nav-item{
+	/*width: 30px;
+	text-align: center;
+	margin: 0;
+	padding-left: 40px;*/
+}
+
+.header__nav-tip{
+	position: absolute;
+	width: 30px;
+	margin-left: 40px;
+	height: 2px;
+	background: #f00;
+	left: 0;
+	bottom: 0px;
+	transition:  all .5s;
+}

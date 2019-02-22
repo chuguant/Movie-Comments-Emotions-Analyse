@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-CN" xml:lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>login</title>
+<base target="_blank">
+<link rel="stylesheet" type="text/css" href="../static/css/login.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/loginmain.css" />
+</head>
+<body>
+<div class="focus-wrap">
+  <div class="focus seven" id="focus">
+    <div class="lbox copy-1"></div>
+    <div class="rbox copy-2"></div>
+    <div class="lbox mask focus-prev"></div>
+    <div class="rbox mask focus-next"></div>
+    <ul class="focus-container" id="panle">
+      <li><a href=""><img src="../static/img/a1.jpg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Action</a></div>
+        </div>
+      </li>
+      <li><a href=""><img src="../static/img/a2.jpg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Sci-fic</a></div>
+        </div>
+      </li>
+      <li><a href=""><img src="../static/img/a3.jpeg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Adventure</a></div>
+        </div>
+      </li>
+      <li><a href=""><img src="../static/img/a1.jpg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Action</a></div>
+        </div>
+      </li>
+      <li><a href=""><img src="../static/img/a2.jpg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Sci-fic</a></div>
+        </div>
+      </li>
+      <li><a href=""><img src="../static/img/a3.jpeg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Adventure</a></div>
+        </div>
+      </li>
+      <li><a href=""><img src="../static/img/a1.jpg"></a> <span class="cover"></span>
+        <div class="info">
+          <div class="title"><a href="">Action</a></div>
+        </div>
+      </li>
+    </ul>
+    <a href="javascript:;" rel="nofollow" class="prev focus-prev png" id="focus-prev" target="_self">Prev</a> <a href="javascript:;" rel="nofollow" class="next focus-next png" id="focus-next" target="_self">Next</a><span class="pn-line png"></span>
+    <div class="trigger" id="focus-trigger"> <span><i></i></span> <span><i></i></span> <span><i></i></span> <span><i></i></span> <span><i></i></span> <span><i></i></span> <span><i></i></span> </div>
+    <div class="trigger-cover"></div>
+  </div>
+</div>
+
+    <h1 class = "title">
+    Register>>>>>>>>>
+    </h1>
+
+<div class="cover1">
+      <div id="bg_image">
+        </div>
+    <div class ="bg_login">
+      <form method="get"  class="login_form" onsubmit="return check()" action="http://localhost:5000/handle_register">
+        Username：<input type="text" name="Username" id = 'use' class="login_text"/></br>
+        Password：<input type="password" name="Password" id = 'reg' class="login_text"/></br>
+        <input type="submit" value="Register" id="LOG" class="submit_sty">
+      </form>
+      <form action="login.html">
+        <input type="submit" value="cancel" id="REG" class="regester_sty" >
+      </form>
+      </div>
+    </div>
+    <script>
+        function check(){
+                 var username = document.getElementById("use").value;
+                 var password = document.getElementById('reg').value;
+         if(username ==  null || username == ''){
+           alert("USER NAME CANNOT BE EMPTY!");
+           return false
+                     }
+                 else if(password ==  null || password == ''){
+                     alert("Password CANNOT BE EMPTY!");
+                     return false
+                 }
+                 else if((username ==  null || username == '') && (password ==  null || password == '')){
+                     alert("Password or Username CANNOT BE EMPTY!");
+                     return false
+         }
+         else{
+             alert("!");
+                     return true
+                 }
+                 password = ""
+                 username = ""
+         return true;
+                }
+    </script>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script src="../static/js/switch.js"></script>
+<script type="text/javascript" src="../static/js/autoplay.js"></script>
+</body>
+</html>
