@@ -9,7 +9,7 @@ Click==7.0
 config==0.4.0
 cycler==0.10.0
 Flask==1.0.2
-Flask-Cors==3.0.6
+Flask-Cors==3.0.9
 Flask-PyMongo==2.1.0
 Flask-RESTful==0.3.6
 flask-restplus==0.11.0
